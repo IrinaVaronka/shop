@@ -14,12 +14,8 @@
                         <li class="list-group-item">
                             <div class="cat-line">
                                 <div class="cat-info">
-                                    <h2>{{$cat->title}}</h2>
-                                    <div class="cat-colors-count">
-                                        @for($i = 0; $i < $cat->colors_count; $i++)
-                                            <div class="--random--color"></div>
-                                        @endfor
-                                    </div>
+                                    <h2>{{$cat->name}}</h2>
+                                    
                                 </div>
                                 <div class="buttons">
                                     <a href="{{route('cats-edit', $cat)}}" class="btn btn-outline-success">Edit</a>
